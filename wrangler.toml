@@ -1,0 +1,12 @@
+# This is the configuration file for the Cloudflare Worker.
+# It tells Cloudflare how to build and deploy your project.
+
+name = "secure-proxy-gateway" # This will be the name of your worker in Cloudflare.
+main = "src/index.js" # This points to the main code file.
+compatibility_date = "2023-10-30" # This ensures your worker uses a recent, stable version of the Cloudflare runtime.
+
+[vars]
+# We will set the actual secret values in the Cloudflare dashboard, not here.
+# This section is just for reference.
+USERS_JSON = ""
+PROXIES_JSON = ""
